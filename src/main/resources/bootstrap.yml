@@ -2,7 +2,11 @@ spring:
   application:
     name: smiamessage
   profiles:
-    active: dev
+    active: default
   cloud:
     config:
       uri: http://localhost:8888
+
+  jpa:
+    hibernate:
+      ddl-auto: create
